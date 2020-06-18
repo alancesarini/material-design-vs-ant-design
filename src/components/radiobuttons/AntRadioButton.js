@@ -14,7 +14,7 @@ const AntCheckbox = () => {
 
   return (
     <>
-      <h2>Material Design</h2>
+      <h2>Ant Design</h2>
       <div className='component'>
         <Radio.Group>
           <Radio value='A'>A</Radio>

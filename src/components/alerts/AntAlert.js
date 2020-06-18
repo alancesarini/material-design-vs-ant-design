@@ -13,7 +13,7 @@ const AntAlert = () => {
 
   return (
     <>
-      <h2>Material Design</h2>
+      <h2>Ant Design</h2>
       <div className='component'>
         <Alert message='This is an error alert' type='error' showIcon />
         <Alert message='This is an warning alert' type='warning' showIcon />

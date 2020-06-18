@@ -13,7 +13,7 @@ const AntCheckbox = () => {
 
   return (
     <>
-      <h2>Material Design</h2>
+      <h2>Ant Design</h2>
       <div className='component'>
         <Select defaultValue='Elephant'>
           <Select.Option value='Elephant'>Elephant</Select.Option>
