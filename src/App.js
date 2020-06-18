@@ -11,6 +11,8 @@ import MaterialRadioButton from './components/radiobuttons/MaterialRadioButton'
 import AntRadioButton from './components/radiobuttons/AntRadioButton'
 import MaterialSelectBox from './components/selectboxes/MaterialSelectBox'
 import AntSelectBox from './components/selectboxes/AntSelectBox'
+import MaterialAlert from './components/alerts/MaterialAlert'
+import AntAlert from './components/alerts/AntAlert'
 
 import 'antd/dist/antd.css'
 import './App.css'
@@ -55,6 +57,7 @@ function App () {
         <Tab label='Checkboxes' />
         <Tab label='Radio buttons' />
         <Tab label='Select boxes' />
+        <Tab label='Alerts' />
       </Tabs>
 
       <TabPanel value={value} index={0}>
@@ -99,6 +102,15 @@ function App () {
         </div>
         <div className='section'>
           <AntSelectBox />
+        </div>
+      </TabPanel>
+
+      <TabPanel value={value} index={5}>
+        <div className='section'>
+          <MaterialAlert />
+        </div>
+        <div className='section'>
+          <AntAlert />
         </div>
       </TabPanel>
     </div>
