@@ -7,6 +7,10 @@ import MaterialTextField from './components/textfields/MaterialTextField'
 import AntTextField from './components/textfields/AntTextField'
 import MaterialCheckbox from './components/checkboxes/MaterialCheckbox'
 import AntCheckbox from './components/checkboxes/AntCheckbox'
+import MaterialRadioButton from './components/radiobuttons/MaterialRadioButton'
+import AntRadioButton from './components/radiobuttons/AntRadioButton'
+import MaterialSelectBox from './components/selectboxes/MaterialSelectBox'
+import AntSelectBox from './components/selectboxes/AntSelectBox'
 
 import 'antd/dist/antd.css'
 import './App.css'
@@ -49,6 +53,8 @@ function App () {
         <Tab label='Buttons' />
         <Tab label='Text fields' />
         <Tab label='Checkboxes' />
+        <Tab label='Radio buttons' />
+        <Tab label='Select boxes' />
       </Tabs>
 
       <TabPanel value={value} index={0}>
@@ -75,6 +81,24 @@ function App () {
         </div>
         <div className='section'>
           <AntCheckbox />
+        </div>
+      </TabPanel>
+
+      <TabPanel value={value} index={3}>
+        <div className='section'>
+          <MaterialRadioButton />
+        </div>
+        <div className='section'>
+          <AntRadioButton />
+        </div>
+      </TabPanel>
+
+      <TabPanel value={value} index={4}>
+        <div className='section'>
+          <MaterialSelectBox />
+        </div>
+        <div className='section'>
+          <AntSelectBox />
         </div>
       </TabPanel>
     </div>
