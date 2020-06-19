@@ -13,6 +13,8 @@ import MaterialSelectBox from './components/selectboxes/MaterialSelectBox'
 import AntSelectBox from './components/selectboxes/AntSelectBox'
 import MaterialAlert from './components/alerts/MaterialAlert'
 import AntAlert from './components/alerts/AntAlert'
+import MaterialDialog from './components/dialogs/MaterialDialog'
+import AntDialog from './components/dialogs/AntDialog'
 
 import 'antd/dist/antd.css'
 import './App.css'
@@ -58,6 +60,7 @@ function App () {
         <Tab label='Radio buttons' />
         <Tab label='Select boxes' />
         <Tab label='Alerts' />
+        <Tab label='Dialogs' />
       </Tabs>
 
       <TabPanel value={value} index={0}>
@@ -111,6 +114,15 @@ function App () {
         </div>
         <div className='section'>
           <AntAlert />
+        </div>
+      </TabPanel>
+
+      <TabPanel value={value} index={6}>
+        <div className='section'>
+          <MaterialDialog />
+        </div>
+        <div className='section'>
+          <AntDialog />
         </div>
       </TabPanel>
     </div>
